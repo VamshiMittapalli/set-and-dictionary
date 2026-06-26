@@ -1,0 +1,42 @@
+#set data type:-
+#create a set of 5 fruits and perform the following operators
+
+fruits={"Apple","Banana","Mango","Orange","grapes"}
+
+#add a new fruit
+fruits.add("pineappale")
+print(fruits)
+
+#remove a fruit
+fruits.remove("Banana")
+print(fruits)
+
+#Check if a specipic fruit in the set
+fruit_to_check="Mango"
+if fruit_to_check in fruits:
+    print(f"{fruit_to_check} is in the set")
+else:
+    print(f"{fruit_to_check} is not in the set")
+
+#create a dictionary with 3 key-value pairs representing a person's name,age,and occupation,and perform the following operators
+person={"name":"vamshi","age":21,"occupation":"student"}
+
+# add new key value pair for the person's location
+person["location"]="hyderabad"
+print(person)
+
+# update the person age
+person["age"]=23
+print(person)
+
+# Retrive and print the persons occupation
+print("occupation:",person["occupation"])
+print("personal details:",person)
+
+#write a python function that takes a list of numbers as input,converts it to a set to remove duplicates,and returns the set
+def remove_duplicates(numbers):return set(numbers)
+# example
+num_list=[1,2,3,4,5,1,6]
+result=remove_duplicates(num_list)
+print("original list:",num_list)
+print("removing duplicates:",result)
